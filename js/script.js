@@ -1,3 +1,7 @@
+// Подключения обработчика анимации при скроле
+new WOW().init();
+
+// Инициализация слайдера
 $('.using_slider').slick({
   dots: true,
   infinite: true,
@@ -35,4 +39,10 @@ $('.submit').on('click', function(e){
     alert('Успешная отправка...');
     // отправляем данные на обработчик
   }
+})
+
+// Обработка вызова моб. меню
+$('.mob-button').on('click', function(){
+  $(this).toggleClass('active');
+  $('.menu').toggleClass('active');
 })
